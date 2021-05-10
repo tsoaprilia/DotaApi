@@ -1,30 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="15dp"
+    card_view:cardBackgroundColor="#000000"
+    card_view:cardCornerRadius="4dp">
 
-    <ImageView
-        android:id="@+id/tv_img"
-        android:layout_width="128dp"
-        android:layout_height="72dp"
-        android:padding="8dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:orientation="vertical">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CCFFFFFF"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/tv_img"
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:padding="8dp" />
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_img"
+            android:text="Name"
+            android:textSize="19sp"
+            android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/tv_img"
             android:orientation="horizontal">
 
             <TextView
@@ -41,5 +63,6 @@
                 android:text="Attack" />
 
         </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
