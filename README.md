@@ -86,15 +86,11 @@ Library merupakan layer tempat fitur-fitur tambahan android berada. Pada umumnya
 Retrofit merupakan library android yang dibuat oleh Square yang digunakan sebagai REST Client pada Android, yang pasti akan memudahkan kita. Karena kita tidak perlu lagi untuk membuat method-method sendiri untuk menggunakan REST Client API dari backend. 
 Library ini menyediakan framework yang powerfull untuk authenticating dan berinteraksi dengan API dengan mengirimkan request menggunakan OkHTTP.
 
-[] Kelebihan Retrofit Library
+[] Kelebihan Retrofit 
 
 kelebihan utama dari retrofit adalah mudahnya digabung dengan library lain dan bisa di kostumisasi sesuai kebutuhan,sehingga bisa retrofit sangat membantu untuk mempercepat pembuatan project.
 
-## Volley
-
-Volley merupakan produk yang diperkenalkan oleh Google untuk mempermudah pertukaran data tanpa harus membuat deretan kode yang sangat panjang. Secara default volley menggunakan metode singkronisasi jadi anda tidak perlu membuat sebuah method atau fungsi yang menggunakan class asynctask.
-
-## alasan mengapa retrofit populer diantaranya yaitu :
+[] Alasan retrofit populer digunakan:
 
 - Retrofit merupakan library yang simple untuk meng-organize API calls.
 - Konsep annotation akan membuat codingan kita lebih rapih dan enak dipandang
@@ -102,7 +98,11 @@ Volley merupakan produk yang diperkenalkan oleh Google untuk mempermudah pertuka
 - Retrofit men-support RxJava.
 - Retrofit men-support penggunaan GSON dan Jackson.
 
-[] kelebihan dan keuntungan penggunaan volley library:
+## Volley
+
+Volley merupakan produk yang diperkenalkan oleh Google untuk mempermudah pertukaran data tanpa harus membuat deretan kode yang sangat panjang. Secara default volley menggunakan metode singkronisasi jadi anda tidak perlu membuat sebuah method atau fungsi yang menggunakan class asynctask.
+
+[] kelebihan dan keuntungan penggunaan volley :
 
 - Penjadwalan otomatis permintaan jaringan.
 - Beberapa koneksi jaringan serentak.
@@ -113,7 +113,7 @@ Volley merupakan produk yang diperkenalkan oleh Google untuk mempermudah pertuka
 - Pemesanan kuat yang memudahkan pengisian UI Anda dengan benar menggunakan data yang diambil secara asinkron dari jaringan.
 - Fitur proses debug dan penelusuran.
 
-[] Fitur Android Volley Library:
+[] Fitur Android Volley :
 
 - Automatic scheduling of network requests.
 - Multiple concurrent network connections.
@@ -126,13 +126,31 @@ Volley merupakan produk yang diperkenalkan oleh Google untuk mempermudah pertuka
 
 ## Retrofit vs Volley, gimana perbandingannya?
 
-- Kemudahan dalam penggunaan: Retrofit sangat mudah digunakan. Memungkinkan kamu untuk memakai API ini dengan method sederhana dari Java menggunakan interface.
-                              Volley: Sedikit lebih rumit pada umumnya. Volley hanya mendukung beberapa response yaitu String, Image, JSONObject dan JSONArray.
-- Performan dan Caching Retrofit : Caching harusnya bisa berjalan jika server kamu menetapkan header control yang benar. Kamu hanya bisa mengubah lapisan klien Http.
-                          Volley : Volley memiliki mekasnisme chacing yang lebih rumit dan fleksibel, memanfaatkan untuk membuat caching bitmaps yang lebih besar.
-- POST requests + multipart uploads Retrofit : Memiliki dukungan penuh untuk permintaan POST dan upload file yang multi, dengan API Sweet untuk boot.
-                                      Volley : support untuk POST request tetapi kamu harus melakukan convert terlebih dahulu Java objek yang kamu buat menjadi JSONObject.
+- Kemudahan dalam penggunaan
+  
+  Retrofit: Sangat mudah digunakan, memungkinkan anda untuk memakai API ini dengan method sederhana dari Java menggunakan interface.
+ 
+  Volley: Sedikit lebih rumit pada umumnya, Volley hanya mendukung beberapa response yaitu String, Image, JSONObject dan JSONArray.
+  
+- Performan dan Caching 
+
+  Retrofit : Caching harusnya bisa berjalan jika server yang digunakaan menetapkan header control yang benar. Saat menggunakan retrofit anda hanya bisa mengubah lapisan klien Http.
+                       
+  Volley : Volley memiliki mekasnisme chacing yang lebih rumit dan fleksibel, memanfaatkan untuk membuat caching bitmaps yang lebih besar.
+  
+- POST requests + multipart uploads 
+
+  Retrofit : Memiliki dukungan penuh untuk permintaan POST dan upload file yang multi, dengan API Sweet untuk boot.
+                                      
+  Volley : Support untuk POST request tetapi kamu harus melakukan convert terlebih dahulu Java objek yang kamu buat menjadi JSONObject.
 
 
+## Penerapan Dan Tampilan Pada Aplikasi
 
+![WhatsApp Image 2021-05-10 at 12 18 39 (1)](https://user-images.githubusercontent.com/60412314/117615784-6b652900-b194-11eb-91cc-0bfb1e5fbd42.jpeg)
 
+![WhatsApp Image 2021-05-10 at 12 18 40](https://user-images.githubusercontent.com/60412314/117615772-686a3880-b194-11eb-8628-097d4b2d6825.jpeg)
+
+![WhatsApp Image 2021-05-10 at 12 18 39](https://user-images.githubusercontent.com/60412314/117615781-6acc9280-b194-11eb-9aff-26d2be2e9ec8.jpeg)
+
+![video_20210510_134852](https://user-images.githubusercontent.com/60412314/117617598-f810e680-b196-11eb-911a-0297b92dbbab.gif)
